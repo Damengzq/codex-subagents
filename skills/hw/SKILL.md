@@ -1,10 +1,10 @@
 ---
 name: hw
-description: 硬件电路分析、调试辅助、wiki文档管理。整合circuit-analysis技能和hardware-wiki服务器。
+description: 硬件电路分析、调试辅助、wiki文档管理。整合cadence-schematic-analysis技能和hardware-wiki服务器。
 dependencies:
   required: []
   optional:
-    - circuit-analysis
+    - cadence-schematic-analysis
 ---
 
 # 硬件助手
@@ -17,13 +17,13 @@ dependencies:
 
 ### 1. 电路分析
 当用户提供原理图 PDF 或网表时：
-- 调用 `$circuit-analysis` 技能进行系统级分析
+- 调用 `$cadence-schematic-analysis` 技能进行系统级分析
 - 输出包含：架构速览、接口清单、电源树、信号路径、可疑点
 - 分析完成后自动更新 wiki 文档
 
 ### 2. 调试辅助
 当用户描述硬件故障现象时：
-- 按 circuit-analysis 的排查模板分析可能原因
+- 按 cadence-schematic-analysis 的排查模板分析可能原因
 - 给出验证点和测量建议
 - 按优先级排序（供电源 -> 时钟 -> 复位 -> 接口 -> 配置）
 
