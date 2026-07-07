@@ -1,0 +1,29 @@
+paths:
+  vault_root: D:/zz/Dameng
+  codex_root: D:/zz/codex
+  wiki_root: D:/zz/codex/hardware-wiki
+  vault_daily: D:/zz/Dameng/02_日志/Daily
+  vault_inbox: D:/zz/Dameng/08_Notes/Inbox
+  vault_tasks: D:/zz/Dameng/08_Notes/Tasks
+  vault_notes: D:/zz/Dameng/08_Notes/Notes
+  vault_hardware: D:/zz/Dameng/08_Notes/Hardware
+  vault_news: D:/zz/Dameng/AI日报/AI新闻
+  vault_circuit: D:/zz/Dameng/04_项目/2026_LK/电路分析skill
+integrations:
+  feishu_webhook_url: ''
+  feishu_group_webhook: ''
+superpowers:
+  scope:
+  - new-skill
+  - modify-skill
+  - modify-config
+  - maintain
+  skip_for:
+  - news
+  - daily
+  - reflect
+  - hw
+  - notes
+maintenance:
+  empty_dir_days: 30
+  archive_days: 90

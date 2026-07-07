@@ -1,0 +1,64 @@
+# ?? ?? ??
+*.log
+feishu-gateway/*.txt
+feishu-gateway/*.log
+
+# ?? ??? ??
+**/ngrok.exe
+**/ngrok.zip
+
+# ?? ???? ??
+tmp/
+tmp_*/
+*render/
+
+# ?? ??/???? ??
+hardware-wiki/check*.js
+hardware-wiki/fix*.py
+hardware-wiki/fix*.js
+hardware-wiki/fix*.mjs
+hardware-wiki/debug*.js
+hardware-wiki/debug*.py
+hardware-wiki/cleanup*.py
+hardware-wiki/read_skill.js
+hardware-wiki/save_js.js
+hardware-wiki/rm_debug.js
+hardware-wiki/update_skill.js
+hardware-wiki/extracted.js
+hardware-wiki/verify_skill.js
+hardware-wiki/patch*.txt
+hardware-wiki/server.py
+hardware-wiki/setup-content.cjs
+hardware-wiki/test.mjs
+hardware-wiki/start-silent.vbs
+
+# ?? ??????? ??
+test_*.cjs
+test_*.mjs
+test_*.py
+fix_*.py
+verify_*.py
+gen_*.py
+tmp_*.py
+
+# ?? ?? JSON ??
+*.mock.json
+feishu-gateway/test_*.json
+
+# ?? ???? ??
+feishu-gateway/?*/
+
+# ?? Node ??
+node_modules/
+
+# ?? Python ??
+__pycache__/
+*.pyc
+
+# ?? Codex ?? ??
+.codex/.tmp/
+.codex/backups/
+
+# ?? ???? ??
+*.pdf
+*.dat

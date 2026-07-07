@@ -1,0 +1,37 @@
+# 晚间反思依赖声明
+# oh-my-codex 依赖解析: 先确认 required 产出存在，再按序调度
+dependencies:
+  reflect:
+    required:
+      - daily: "今日计划对照"
+      - news: "今日AI资讯回顾"
+      - hardware-wiki: "硬件工作记录"
+    optional:
+      - notes: "今日灵感笔记"
+    scan:
+      daily:
+        path: "{codex_root}/daily/{date}.md"
+        required: true
+      news:
+        path: "{codex_root}/news/{date}.md"
+        required: true
+      hardware-wiki:
+        path: "{wiki_root}/wiki-content"
+        method: "today_modified"
+        required: true
+      notes:
+        path: "{vault_inbox}/"
+        method: "today_files"
+        required: false
+      notes-tasks:
+        path: "{vault_tasks}/"
+        method: "today_files"
+        required: false
+      notes-notes:
+        path: "{vault_notes}/"
+        method: "today_files"
+        required: false
+      notes-hardware:
+        path: "{vault_hardware}/"
+        method: "today_files"
+        required: false

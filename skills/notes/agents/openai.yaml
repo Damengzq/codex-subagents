@@ -1,0 +1,6 @@
+interface:
+  display_name: "灵感笔记"
+  short_description: "智能分类捕捉灵感、待办、笔记到 Obsidian vault"
+  default_prompt: "Use notes-capture to classify and save user input to Obsidian vault with proper frontmatter and wikilinks."
+policy:
+  allow_implicit_invocation: true

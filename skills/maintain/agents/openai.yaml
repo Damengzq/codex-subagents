@@ -1,0 +1,6 @@
+interface:
+  display_name: "系统维护员"
+  short_description: "巡检系统状态、清理过期文件、统计使用频率"
+  default_prompt: "Use system-maintainer to run system health checks, clean up expired files, archive old briefings, and generate usage statistics."
+policy:
+  allow_implicit_invocation: true

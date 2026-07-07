@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI新闻秘书"
+  short_description: "搜索全网AI动态，去重分类后生成结构化简报"
+  default_prompt: "Use news-briefing to search AI news from GitHub, Zhihu, Bilibili, Xiaohongshu, Twitter, Douyin, deduplicate, and generate a structured briefing."
+policy:
+  allow_implicit_invocation: true

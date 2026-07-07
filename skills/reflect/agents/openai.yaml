@@ -1,0 +1,6 @@
+interface:
+  display_name: "反思导师"
+  short_description: "基于今日产出引导复盘反思，生成结构化反思笔记"
+  default_prompt: "Use evening-reflection to scan today's outputs (daily-briefing, news-briefing, hardware-wiki changes, notes) and guide the user through structured reflection."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,25 @@
+﻿dependencies:
+  daily:
+    optional:
+      - notes: "扫描 Tasks/Inbox/Hardware 中的工作事项"
+      - hardware-wiki: "扫描 wiki 待办项"
+    scan:
+      obsidian:
+        paths:
+          - "{vault_tasks}"
+          - "{vault_inbox}"
+          - "{vault_hardware}"
+        lookback_days: 14
+        extract:
+          - todos
+          - work_items
+          - completed_items
+          - problems
+      hardware-wiki:
+        path: "{wiki_root}/wiki-content"
+        method: "recent_todos"
+        lookback_days: 7
+    outputs:
+      - daily: "{vault_daily}/工作进度-YYYY-MM-DD.md"
+      - weekly: "{vault_daily}/工作进度-周报-YYYY-WXX.md"
+      - monthly: "{vault_daily}/工作进度-月报-YYYY-MM.md"
