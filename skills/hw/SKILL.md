@@ -18,8 +18,13 @@ dependencies:
 ### 1. 电路分析
 当用户提供原理图 PDF 或网表时：
 - 调用 `$cadence-schematic-analysis` 技能进行系统级分析
+- **文档风格参考**：`cadence-schematic-analysis/examples/CPU_CARRIER_MXM_V10_Schematic_Analysis.md`
+  - 主系统架构图 + 各子系统深度分析
+  - 架构图使用 graph LR 左右流向（优化可读性）
+  - 不包含"器件分类统计"和"网络统计"纯数据表格
 - 输出包含：架构速览、接口清单、电源树、信号路径、可疑点
 - 分析完成后自动更新 wiki 文档
+- **同时创建模组 `_index.md`**（按下方模板）
 
 ### 2. 调试辅助
 当用户描述硬件故障现象时：
